@@ -1,6 +1,7 @@
 export default {
     user: {
-      username: false
+      username: null,
+      loggedIn: false
     },
     business: [
       {

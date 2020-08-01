@@ -4,13 +4,14 @@ const user = (state = null, action) => {
     switch (action.type) {
         case 'LOGIN':
             return {
-                ...action.value,
+                ...state,
+                username: action.value,
                 loggedIn: true
             }
         case 'LOGOUT':
             return {
                 ...state,
-                user: null,
+                username: null,
                 loggedIn: false,
             }
         case 'LOGOUT':
